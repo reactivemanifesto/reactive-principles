@@ -1,11 +1,11 @@
 site:
-  url: https://principles.reactive.foundation
+  url: https://www.reactivepriciples.org
   title: The Reactive Principles
   
 content:
   branches: [HEAD]
   sources:
-  - url:  git@github.com:reactivefoundation/reactiveprinciples.git
+  - url:  git@github.com:reactivemanifesto/reactive-principles.git
     edit_url: ~
     start-path: docs
   
