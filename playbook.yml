@@ -12,7 +12,7 @@ content:
 
 ui:
   bundle:
-    url: ./ui-bundle/ui-bundle.zip
+    url: ./antora-ui-default/build/ui-rp-theme-bundle.zip
     snapshot: true
       
     
