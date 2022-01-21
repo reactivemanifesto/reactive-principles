@@ -1,0 +1,112 @@
+= The Reactive Principles
+
+////
+Copyright 2020 Jonas Bonér & Reactive Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+////
+
+include::partial$include.adoc[]
+
+_Design Principles for Distributed Applications_
+
+[.float]
+****
+Written by Jonas Bonér—with help (roughly in order of contribution level) from: Roland Kuhn, Ben Christensen, Peter Vlugter, Josh Long, Sergey Bykov, Ben Hindman, Vaughn Vernon, Clement Escoffier, James Roper, Michael Behrendt, Kresten Krab Thorup, Colin Breck, Allard Buijze, Derek Collison, Viktor Klang, Ben Hale, Steve Gury, Tyler Jewell, James Ward, Stephan Ewen, and Ryland Degnan.
+****
+
+This document provides guidance and techniques established among experienced Reactive practitioners for building individual services, applications, and whole systems. As a companion to the {reactive-manifesto}[Reactive Manifesto], {reactive-manifesto}[{tab}, window="new tab"] it incorporates the ideas, paradigms, methods, and patterns from both Reactive Programming and Reactive Systems into a set of practical principles that software architects and developers can apply in their transformative work. 
+
+Our purpose is to help businesses realize the efficiencies inherent to using Reactive. Our collective experience shows that these principles enable the design and implementation of  highly concurrent and distributed software that is performant, scalable, and resilient, while at the same time conserving resources when deploying, operating, and maintaining it.  Further application of Reactive principles will allow us as a society to depend on software for making our diverse and distributed civilization more robust.
+[.home-page-grid]
+====
+
+--
+[discrete]
+== Design Principles for Cloud Native Applications
+
+Learn:::
+** How the Reactive approach to Cloud Native provides benefits
+** Why Cloud Native infrastructure alone isn't enough to achieve elasticity, scalability, and resilience
+
+[.read-link]
+xref:cloud-native:index.adoc[Read More &#8594;]
+--
+
+--
+[discrete]
+== Design Principles for Edge Native Applications
+
+Learn:::
+** The constraints Edge Native imposes on design
+** How to avoid impedance mismatch between Edge Native and Cloud Native applications
+
+[.read-link]
+xref:edge-native:index.adoc[Read More &#8594;]
+--
+
+--
+[discrete]
+== The Reactive Principles
+
+Learn:::
+** What makes a system Reactive
+** How to: 
+
+*** Stay responsive
+*** Accept uncertainty
+*** Embrace failure
+*** Assert autonomy
+*** Tailor consistency
+*** Decouple time
+*** Decouple space
+*** Handle dynamics
+
+[.read-link]
+xref:principles:index.adoc[Read More &#8594;]
+--
+
+--
+[discrete]
+== The Reactive Patterns
+
+Learn how the following patterns contribute to Reactive design:::
+** Partition State
+** Communicate Facts
+** Isolate Mutations
+** Coordinate Dataflow
+** Localize State
+** Observe Communications
+
+[.read-link]
+xref:patterns:index.adoc[Read More &#8594;]
+--
+
+====
+
+
+
+
+
+
+_Version 1.0_ _Published {docdate}_
+
+
+
+
+
+
+
+
+
+

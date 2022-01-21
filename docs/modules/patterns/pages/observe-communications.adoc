@@ -1,0 +1,28 @@
+= 6. Observe Communications
+
+////
+Copyright 2020 Jonas Bonér & Reactive Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+////
+
+include::ROOT:partial$include.adoc[]
+
+_Understand your system by looking at its dynamics_
+
+
+With the increasing complexity of applications and systems, introspecting a system becomes a stringent requirement. Observability is about collecting data to answer a simple question: how is your system doing? Observability enables you to understand what is going on and provides a more precise status of the system—both now, or historically to help identify trends. 
+
+In general, observability composes application metrics, network metrics, health reports, logs, and traces. From these, it derives other synthetic metrics and alerts enforcing the availability and reliability of the system. 
+
+In Reactive systems, it is indispensable to observe not only applications but also their communication tissue. Application metrics are often not enough to wisely make decisions about the overall state of the system. By looking at the communication, you extract the system dynamics—how the data flows. Collecting information about data consumers, producers, exchanges, and queue sizes allows identification of bottlenecks and misbehaving components. It greatly helps find those parts of the system that are running behind by looking at the evolution of the consumed message rate. This level of observation is essential to drive elasticity decisions and continuously adjust your system to meet the current demands. 

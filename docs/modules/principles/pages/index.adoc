@@ -1,0 +1,43 @@
+= The Reactive Principles
+:toc:
+:toc-title: ON THIS PAGE
+:toclevels: 2
+
+////
+Copyright 2020 Jonas Bonér & Reactive Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+////
+
+include::ROOT:partial$include.adoc[]
+
+
+Building a Cloud Native, Edge Native, or Internet of Things (IoT) application means building and running a distributed system on unreliable hardware and across unreliable networks. An application can be considered Reactive if it embraces the principles described below into its design and architecture, and often into its programming model. 
+
+[.float]
+****
+An application does not need to use Reactive approaches to apply these principles, though it can definitely help—there’s a reason Reactive is used!
+****
+
+Most distributed systems will typically end up tackling some or all of the challenges described in the xref:cloud-native:index.adoc[Cloud Native] and xref:edge-native:index.adoc[Edge Native] introductions, but that alone does not make them Reactive.  What criteria do we use to  distinguish between  a “Reactive application” and one that is not Reactive? The Reactive one addresses these problems directly in its abstractions, programming models, protocols, interaction schemes, error handling, and other such areas of design and architecture. Whereas many distributed systems, unfortunately, treat these issues as an afterthought—as operational problems or infrastructure problems that are dealt with via increasingly complex technology stacks, wrappers, workarounds, and unfortunate leaky abstractions. 
+
+The rest of this section walks through foundational principles of implementing distributed systems that make an application Reactive:
+
+* xref:stay-responsive.adoc[I. Stay Responsive]
+* xref:accept-uncertainty.adoc[II. Accept Uncertainty]
+* xref:embrace-failure.adoc[III. Embrace Failure]
+* xref:assert-autonomy.adoc[IV. Assert Autonomy]
+* xref:tailor-consistency.adoc[V. Tailor Consistency]
+* xref:decouple-time.adoc[VI. Decouple Time]
+* xref:decouple-space.adoc[VII. Decouple Space]
+* xref:handle-dynamics.adoc[VIII. Handle Dynamics]

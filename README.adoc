@@ -1,0 +1,34 @@
+= README
+
+
+The source files for this guide use asciidoc syntax and the project is configured to build with Antora. To review and suggest changes, we recommend building the HTML files locally. 
+
+
+== Building the guide locally
+
+To build this guide locally, follow these steps:
+
+. Follow the steps to install Antora that are described here: https://docs.antora.org/antora/2.0/install/install-antora/.
+. Run `npm install -g asciidoc-link-check`
+. Optional, to build with search enabled: Add the antora-lunr integration: https://github.com/Mogztter/antora-lunr by following the readme steps outlined in the *Generate an index file* section *only*. You do not need to enable search in the UI. 
+
+The command for building without search:
+````
+antora playbook.yml
+````
+
+The command for building with search enabled:
+
+````
+DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --generator antora-site-generator-lunr playbook.yml
+````
+
+
+
+== For reference
+
+Antora is built on top of Asciidoctor. One of the main differences between Asciidoctor and Antora is that Antora requires a specfic directory structure. If you are new to Antora and asciidoc, the following references might be helpful:
+
+* https://docs.antora.org/antora/2.0/
+* https://asciidoctor.org/docs/
+* http://asciidoc.org/
