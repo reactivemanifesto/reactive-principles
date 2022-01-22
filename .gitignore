@@ -1,1 +1,6 @@
 .DS_Store
+/build/
+Icon_
+/antora-ui-default/build/
+/antora-ui-default/node_modules/
+/antora-ui-default/public/
