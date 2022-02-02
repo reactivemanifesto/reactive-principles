@@ -1,0 +1,39 @@
+.doc .sidebarblock.float {
+    float: right;
+    width: 33%;
+    margin-left: 2rem;
+}
+.download-pdf {
+    display: none;
+    padding-right: .75rem;
+    color: var(--toolbar-muted-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .body {
+      display: flex;
+	  justify-content: center;
+    }
+	main {
+		max-width: 1120px;
+	}
+	.nav {
+		
+		
+	}
+	.nav .panels {
+		margin-top: 4rem;
+		border-right: 1px solid var(--panel-border-color);
+
+	}
+	.nav-panel-menu {
+		padding-top: 1rem;
+	}
+
+	.doc > h1.page:first-child {
+		margin-top: 5.5rem;
+	}
+	.download-pdf {
+		display: block;
+	}
+}

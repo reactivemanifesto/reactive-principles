@@ -16,11 +16,10 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
-  --color-rf-dark-grey: #252525;
-  --color-rf-purple: #390F37;
-  --color-rf-purple-ltr: #613D5F;
-  --color-rf-purple-vibrant: #771F73;
-  --color-rf-pink-vibrant: #B22FAC;
+  --color-rm-primary: #445de9;
+  --color-rm-primary-dkr: #3049d5;
+  --color-rm-black: #000000;
+  --color-rm-grey: #777777;
 
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
@@ -28,10 +27,14 @@
   --body-font-size--desktop: 1.125em; /* 18px */
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
-  --body-font-family: 'Source Serif Pro', Georgia, serif;
-  --body-font-weight-bold: 600;
-  --monospace-font-family: 'Source Code Pro', monospace;
+  --body-font-color: var(--color-rm-grey);
+  --body-font-family: 'PT Serif', georgia, serif;
+  --body-font-weight-bold: 700;
+  --heading-font-color: var(--color-rm-primary);
+  --heading-font-family: 'Helvetica Neue', sans-serif;
+  --heading-font-weight: 300;
+  --heading-font-weight-bold: 700;
+  --monospace-font-family: monospace;
   --monospace-font-weight-bold: 500;
   /* base */
   --body-background: var(--color-white);
@@ -39,9 +42,9 @@
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
-  --navbar-background: var(--color-rf-dark-grey);
+  --navbar-background: var(--color-rm-primary);
   --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-rf-purple);
+  --navbar_hover-background: var(--color-rm-primary);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
@@ -50,16 +53,17 @@
   --navbar-menu-font-color: var(--body-font-color);
   --navbar-menu_hover-background: var(--color-smoke-50);
   /* nav */
-  --nav-background: var(--panel-background);
+  --nav-background: var(--color-white);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
   --nav-heading-font-color: var(--color-jet-30);
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
+  --nav-panel-explore-display: none; /* change to flex to turn on*/
   /* toolbar */
-  --toolbar-background: var(--panel-background);
-  --toolbar-border-color: var(--panel-border-color);
+  --toolbar-background: var(--color-white);
+  --toolbar-border-color: var(--color-white);
   --toolbar-font-color: var(--color-gray-70);
   --toolbar-muted-color: var(--color-gray-30);
   --page-version-menu-background: var(--color-smoke-70);
@@ -81,18 +85,16 @@
   --warning-color: #e18114;
   --warning-on-color: var(--color-white);
   /* doc */
-  --doc-font-color: var(--color-jet-20);
+  --doc-font-color: var(--color-rm-grey);
   --doc-font-size: inherit;
   --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--color-jet-80);
-  --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: var(--color-rf-pink-vibrant);
-  --link_hover-font-color: var(--color-rf-pink-vibrant);;
+  --link-font-color: var(--color-rm-primary);
+  --link_hover-font-color: var(--color-rm-primary);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);
@@ -111,20 +113,20 @@
   --pre-border-color: var(--panel-border-color);
   --pre-annotation-font-color: var(--color-gray-10);
   --quote-background: var(--panel-background);
-  --quote-border-color: var(--color-rf-purple-vibrant);
+  --quote-border-color: var(--color-rm-primary);
   --quote-font-color: var(--color-gray-70);
   --quote-attribution-font-color: var(--color-gray-30);
   --sidebar-background: var(--panel-background);
   --table-border-color: var(--panel-border-color);
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-rf-dark-grey);
+  --footer-background: var(--color-rm-black);
   --footer-font-color: var(--color-smoke-90);
   --footer-link-font-color: var(--color-smoke-90);
-  --footer-link-font-color-hover: var(--color-rf-pink-vibrant);
+  --footer-link-font-color-hover: var(--color-rm-primary);
   /* dimensions and positioning */
   --navbar-height: calc(83 / var(--rem-base) * 1rem);
-  --toolbar-height: calc(45 / var(--rem-base) * 1rem);
+  --toolbar-height: calc(80 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
   --body-min-height: calc(100vh - var(--body-top));

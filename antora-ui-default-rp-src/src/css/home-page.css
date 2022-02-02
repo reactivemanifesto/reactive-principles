@@ -1,7 +1,6 @@
 .home-page-grid {
-  border: 0px solid red;
+  border: 0px solid red !important;
 }
-
 
 .doc .exampleblock.home-page-grid > .content {
   border: none;
@@ -19,40 +18,48 @@
   border-radius: 0.25rem;
   margin-bottom: 1rem !important;
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock h2 {
   margin: 0;
   font-weight: 600;
-  color: var(--color-rf-purple-vibrant);
+  color: var(--color-rm-primary);
   font-size: calc(22 / var(--rem-base) * 1rem);
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .dlist {
   margin: 1rem 0;
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .dlist dt {
   font-style: normal;
   font-size: calc(18 / var(--rem-base) * 1rem);
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .dlist dd {
   margin: 0;
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .read-link {
   align-self: flex-end;
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .read-link p {
   display: flex;
   justify-content: flex-end;
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .read-link a {
-  background: var(--color-rf-purple-vibrant);
+  background: var(--color-rm-primary);
   color: white;
   display: inline-block;
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   text-transform: uppercase;
   line-height: 1;
   border-radius: 100px;
   font-size: calc(14 / var(--rem-base) * 1rem);
 }
+
 .doc .exampleblock.home-page-grid > .content > .openblock .read-link a:hover {
-  background: var(--color-rf-pink-vibrant);
+  background: var(--color-rm-primary);
   text-decoration: none;
 }

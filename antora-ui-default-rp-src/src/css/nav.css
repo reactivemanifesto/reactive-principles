@@ -152,7 +152,7 @@ html.is-clipped--nav {
 
 .nav-panel-explore {
   background: var(--nav-background);
-  display: flex;
+  display: var(--nav-panel-explore-display);
   flex-direction: column;
   position: absolute;
   top: 0;

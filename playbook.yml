@@ -12,8 +12,7 @@ content:
 
 ui:
   bundle:
-    url: ./antora-ui-default/build/ui-rp-theme-bundle.zip
-    snapshot: true
+    url: ./antora-ui-default-rp-src/build/ui-rp-theme-bundle.zip
       
     
 runtime:
@@ -23,6 +22,7 @@ asciidoc:
   attributes:
     
     page-pagination: ""
+    page-toctitle: "On This Page"
     
 
     

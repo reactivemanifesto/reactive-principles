@@ -14,4 +14,7 @@
 @import "header.css";
 @import "footer.css";
 @import "highlight.css";
+@import "search.css";
+@import "home-page";
+@import "custom-additions.css";
 @import "print.css";

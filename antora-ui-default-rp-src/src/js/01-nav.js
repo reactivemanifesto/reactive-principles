@@ -4,9 +4,9 @@
   var SECT_CLASS_RX = /^sect(\d)$/
 
   var navContainer = document.querySelector('.nav-container')
-  var navToggle = document.querySelector('.nav-toggle')
+  //var navToggle = document.querySelector('.nav-toggle')
 
-  navToggle.addEventListener('click', showNav)
+  //navToggle.addEventListener('click', showNav)
   navContainer.addEventListener('click', trapEvent)
 
   var menuPanel = navContainer.querySelector('[data-panel=menu]')
