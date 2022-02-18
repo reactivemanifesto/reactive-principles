@@ -120,9 +120,9 @@
   --table-border-color: var(--panel-border-color);
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-rm-black);
-  --footer-font-color: var(--color-smoke-90);
-  --footer-link-font-color: var(--color-smoke-90);
+  --footer-background: var(--color-rm-primary);
+  --footer-font-color: var(--color-white);
+  --footer-link-font-color: var(--color-white);
   --footer-link-font-color-hover: var(--color-rm-primary);
   /* dimensions and positioning */
   --navbar-height: calc(83 / var(--rem-base) * 1rem);

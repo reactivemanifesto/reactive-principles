@@ -8,23 +8,74 @@
     padding-right: .75rem;
     color: var(--toolbar-muted-color);
 }
+body {
+	padding-top: 0;
+}
+.rm-branding {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	margin: 2rem 0 1rem 0;
+	font-size: 1.125rem;
+}
+.rm-logo {
+	margin: 0;
+	font-weight: 200;
+	font-family: var(--heading-font-family);
+}
+.rm-logo span {
+	border-bottom: 2px solid #445de9;
+}
+header.header {
+	left: 0;
+	position: sticky;
+	top: 0px;
+	background-color: white;
+	z-index: var(--z-index-navbar);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.navbar {
+	position: relative;
+	z-index: var(--z-index-navbar);
+	width: 100%;
+	max-width: 1440px;
+	font-family: var(--heading-font-family);
+}
+
+
+.toc.sidebar .toc-menu {
+	margin-top: 4rem;
+	top: calc(var(--navbar-height) + 1rem);
+	padding-top: 1.75rem;
+}
+
+.toc.sidebar .toc-menu h3 {
+	height: auto;
+}
+
+footer.footer {
+	margin-top: 4rem;
+}
 
 @media screen and (min-width: 1024px) {
     .body {
-      display: flex;
-	  justify-content: center;
+      	display: flex;
+	  	justify-content: center;
     }
+	
 	main {
 		max-width: 1120px;
 	}
 	.nav {
-		
-		
+		top: calc(var(--navbar-height) + 1rem);
 	}
 	.nav .panels {
 		margin-top: 4rem;
 		border-right: 1px solid var(--panel-border-color);
-
 	}
 	.nav-panel-menu {
 		padding-top: 1rem;
@@ -35,5 +86,22 @@
 	}
 	.download-pdf {
 		display: block;
+	}
+}
+@media screen and (min-width: 1440px) {
+	header.header {
+		padding: 1rem;
+	}
+	.navbar {
+		min-width: 1440px;
+		border-radius: 100px;
+		padding: 0 1rem;
+	}
+	.navbar-item .search-bar {
+		padding-right: 0;
+	}
+	.navbar-item .search-bar #search-input {
+		border-radius: 100px;
+		padding: 0.5rem 1rem;
 	}
 }
