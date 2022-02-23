@@ -20,7 +20,7 @@ asciidoc:
   attributes:
     
     page-pagination: ""
-    page-toctitle: "On This Page New"
+    page-toctitle: "On This Page"
     
 output:
    dir: ./build/site
