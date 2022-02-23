@@ -11,7 +11,7 @@ content:
   
 ui:
   bundle:
-    url: antora-ui-default-rp-src/build/ui-rp-theme-bundle.zip
+    url: ./antora-ui-default-rp-src/build/ui-rp-theme-bundle.zip
   supplemental_files:
   - path: ui.yml
     contents: |
