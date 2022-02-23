@@ -1,19 +1,25 @@
 name: Publish to GitHub Pages
 on:
   push:
-    branches: [main]
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Run Antora
-        uses: kameshsampath/antora-site-action@v0.2.4
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
-          antora_playbook: playbook.yml
+          node-version: '16'
+      - name: Install Antora
+        run: npm i --no-fund --no-audit --quiet antora
+      - name: Install Lunr Search
+        run: npm i antora-lunr antora-site-generator-lunr
+      - name: Run Antora
+        run: npx antora --fetch --generator antora-site-generator-lunr playbook.yml
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/site
+          publish_dir: ./public
