@@ -5,8 +5,20 @@ footer.footer {
   line-height: var(--footer-line-height);
   padding: 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
+}
+footer.footer > div {
+  max-width: 700px;
+  text-align: center;
+}
+footer.footer > hr {
+  width: 100%;
+  max-width: 300px;
+  opacity: .5;
+  margin: 2rem 0 0 0;
 }
 
 .footer p.trademark {
