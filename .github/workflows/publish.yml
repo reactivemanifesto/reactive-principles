@@ -1,7 +1,7 @@
 name: Publish to GitHub Pages
 on:
   push:
-    branches: [main]
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
       - name: Run Antora
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
-          antora_playbook: antora-playbook.yml
+          antora_playbook: playbook.yml
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
