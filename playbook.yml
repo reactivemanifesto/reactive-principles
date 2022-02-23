@@ -12,12 +12,6 @@ content:
 ui:
   bundle:
     url: ./antora-ui-default-rp-src/build/ui-rp-theme-bundle.zip
-  supplemental_files:
-  - path: ui.yml
-    contents: |
-      static_files:
-      - .nojekyll
-  - path: .nojekyll
 
 runtime:
   fetch: true
@@ -29,5 +23,5 @@ asciidoc:
     page-toctitle: "On This Page"
     
 output:
-   dir: ./build
+   #dir: ./build/site
    clean: true
