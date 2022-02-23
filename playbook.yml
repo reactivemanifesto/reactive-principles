@@ -29,5 +29,5 @@ asciidoc:
     page-toctitle: "On This Page"
     
 output:
-#   dir: ./
+   dir: ./build
    clean: true
