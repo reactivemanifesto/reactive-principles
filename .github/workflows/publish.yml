@@ -17,7 +17,7 @@ jobs:
       - name: Install Lunr Search
         run: npm i antora-lunr antora-site-generator-lunr
       - name: Run Antora
-        run: npx DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --fetch --generator antora-site-generator-lunr playbook.yml
+        run: npx antora --fetch --generator antora-site-generator-lunr playbook.yml
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
