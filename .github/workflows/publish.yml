@@ -12,6 +12,7 @@ jobs:
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
           antora_playbook: playbook.yml
+          site_sources_path: 'site-sources-folder'
           antora_generator: 'antora-site-generator-lunr'
           antora_docsearch_enabled: 'true'
       - name: Publish to GitHub Pages
