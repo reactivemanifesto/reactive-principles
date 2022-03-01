@@ -1,0 +1,23 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run Antora
+        uses: kameshsampath/antora-site-action@v0.3.0
+        with:
+            antora_playbook: playbook.yml
+            # optional path within the repo, defaults to ${{github.workspace}}
+            site_sources_path: 'docs'
+            antora_generator: 'antora-site-generator-lunr'
+            antora_docsearch_enabled: 'true'
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/site
