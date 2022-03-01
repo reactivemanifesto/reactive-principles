@@ -1,4 +1,5 @@
 .DS_Store
 Icon_
+/build/site/
 /antora-ui-default-rp-src/node_modules/
 /antora-ui-default-rp-src/public/
