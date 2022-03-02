@@ -6,8 +6,8 @@
   var navContainer = document.querySelector('.nav-container')
   var navToggle = document.querySelector('.nav-toggle')
 
-  navToggle.addEventListener('click', showNav)
-  navContainer.addEventListener('click', trapEvent)
+  if (navToggle) navToggle.addEventListener('click', showNav)
+  if (navContainer) navContainer.addEventListener('click', trapEvent)
 
   var menuPanel = navContainer.querySelector('[data-panel=menu]')
   if (!menuPanel) return

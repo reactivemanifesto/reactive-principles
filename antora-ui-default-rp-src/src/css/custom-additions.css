@@ -7,12 +7,23 @@
 .download-pdf {
   display: none;
   padding-right: 0.75rem;
-  color: var(--toolbar-muted-color);
+  color: var(--color-rm-primary);
 }
 
-.download-as-pdf {
+body .download-as-pdf {
   font-weight: 500;
   font-size: 0.75rem;
+  color: #fff;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-family: var(--heading-font-family);
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-rm-primary);
+  border: 1px solid var(--color-rm-primary);
 }
 
 .download-as-pdf:hover {
@@ -23,35 +34,46 @@ body {
   padding-top: 0;
 }
 
-.rm-branding {
+.rp-branding {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
-  margin: 2rem 0 1rem 0;
+  gap: 3rem;
+  margin: 4rem 0 0 0;
   font-size: 1rem;
 }
 
-.rm-logo {
+.rp-branding .search-bar {
+  padding-right: 0;
+}
+
+.rp-branding .search-bar #search-input {
+  border-radius: 100px;
+  min-width: 400px;
+  border: 1px solid var(--color-gray-10);
+  padding: 0.5rem 1rem;
+}
+
+.r-logo {
   margin: 0;
   font-weight: 200;
   font-family: var(--manifesto-heading-font-family);
+  color: var(--color-rm-grey);
 }
 
-.rm-logo span {
+.r-logo span {
   border-bottom: 2px solid #445de9;
 }
 
-.rp-logo {
-  display: flex;
-  margin: 0;
-  font-weight: 200;
-  font-family: var(--manifesto-heading-font-family);
+.r-logo.white span {
+  border-bottom: 2px solid #fff;
 }
 
-.rp-logo span {
-  border-bottom: 1px solid #fff;
+.r-logo.main-logo {
+  font-size: 3rem;
+  font-weight: 100;
 }
 
 .companion {
@@ -63,18 +85,28 @@ body {
   padding: 2rem 0;
 }
 
-.r-logo {
-  font-weight: 200;
+.companion .r-logo {
   font-size: 1.25rem;
-  font-family: var(--manifesto-heading-font-family);
 }
 
-.r-logo span {
-  border-bottom: 1px solid #fff;
+.companion .r-logo:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .companion em {
   opacity: 0.7;
+}
+
+.nav-menu .section-title {
+  display: block;
+  color: #445de9;
+  font-size: var(--body-font-size);
+}
+
+.nav-menu hr {
+  opacity: 0.5;
+  margin: 1rem 0;
 }
 
 .navbar-brand .navbar-item.r-logo {
@@ -83,7 +115,7 @@ body {
 
 header.header {
   left: 0;
-  position: sticky;
+  position: relative;
   top: 0;
   background-color: white;
   z-index: var(--z-index-navbar);
@@ -103,7 +135,7 @@ header.header {
 .toc.sidebar .toc-menu {
   margin-top: 4rem;
   top: calc(var(--navbar-height) + 1rem);
-  padding-top: 1.75rem;
+  padding-top: 0;
 }
 
 .toc.sidebar .toc-menu h3 {
@@ -130,7 +162,7 @@ header.header {
   }
 
   .nav-panel-menu {
-    padding-top: 1rem;
+    padding-top: 0;
   }
 
   .doc > h1.page:first-child {
@@ -155,14 +187,5 @@ header.header {
 
   .navbar-item.search {
     padding-right: 0;
-  }
-
-  .navbar-item .search-bar {
-    padding-right: 0;
-  }
-
-  .navbar-item .search-bar #search-input {
-    border-radius: 100px;
-    padding: 0.5rem 1rem;
   }
 }

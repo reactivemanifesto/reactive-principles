@@ -1,8 +1,9 @@
 .toc-menu {
   color: var(--toc-font-color);
+  font-family: var(--heading-font-family);
 }
 
-.toc.sidebar .toc-menu {
+.toc.sidebar .toc-menu-stick {
   margin-right: 0.75rem;
   position: sticky;
   top: var(--toc-top);
