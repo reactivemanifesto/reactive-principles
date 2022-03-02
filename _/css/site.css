@@ -799,7 +799,7 @@ a + .breadcrumbs {
 sans-serif;
   font-family: var(--heading-font-family);
 }
-.toc.sidebar .toc-menu-stick {
+.toc.sidebar .toc-menu {
   margin-right: 0.75rem;
   position: sticky;
   top: 4.88889rem;
