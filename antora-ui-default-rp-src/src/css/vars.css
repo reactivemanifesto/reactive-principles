@@ -18,8 +18,8 @@
   --color-black: #000;
   --color-rm-primary: #445de9;
   --color-rm-primary-dkr: #3049d5;
-  --color-rm-black: #000000;
-  --color-rm-grey: #777777;
+  --color-rm-black: #000;
+  --color-rm-grey: #777;
 
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
@@ -61,7 +61,8 @@
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
-  --nav-panel-explore-display: none; /* change to flex to turn on*/
+  /* change to flex to turn on */
+  --nav-panel-explore-display: none;
   /* toolbar */
   --toolbar-background: var(--color-white);
   --toolbar-border-color: var(--color-white);

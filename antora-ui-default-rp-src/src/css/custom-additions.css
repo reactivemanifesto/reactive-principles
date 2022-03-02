@@ -1,145 +1,168 @@
 .doc .sidebarblock.float {
-    float: right;
-    width: 33%;
-    margin-left: 2rem;
+  float: right;
+  width: 33%;
+  margin-left: 2rem;
 }
+
 .download-pdf {
-    display: none;
-    padding-right: .75rem;
-    color: var(--toolbar-muted-color);
+  display: none;
+  padding-right: 0.75rem;
+  color: var(--toolbar-muted-color);
 }
+
 .download-as-pdf {
-	font-weight: 500;
-	font-size: .75rem;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
+
 .download-as-pdf:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
 body {
-	padding-top: 0;
+  padding-top: 0;
 }
+
 .rm-branding {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 60px;
-	margin: 2rem 0 1rem 0;
-	font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 2rem 0 1rem 0;
+  font-size: 1rem;
 }
+
 .rm-logo {
-	margin: 0;
-	font-weight: 200;
-	font-family: var(--manifesto-heading-font-family);
+  margin: 0;
+  font-weight: 200;
+  font-family: var(--manifesto-heading-font-family);
 }
+
 .rm-logo span {
-	border-bottom: 2px solid #445de9;
+  border-bottom: 2px solid #445de9;
 }
+
 .rp-logo {
-	display: flex;
-	margin: 0;
-	font-weight: 200;
-	font-family: var(--manifesto-heading-font-family);
+  display: flex;
+  margin: 0;
+  font-weight: 200;
+  font-family: var(--manifesto-heading-font-family);
 }
+
 .rp-logo span {
-	border-bottom: 0px solid #ffffff;
+  border-bottom: 1px solid #fff;
 }
 
 .companion {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	gap: 1rem;
-	padding: 2rem 0;
-}
-.r-logo {
-	font-weight: 200;
-	font-size: 1.25rem;
-	font-family: var(--manifesto-heading-font-family);
-}
-.r-logo span {
-	border-bottom: 1px solid #ffffff;
-}
-.companion em {
-	opacity: .7;
-}
-.navbar-brand .navbar-item.r-logo {
-	font-size: calc(25/var(--rem-base)*1rem);
-}
-header.header {
-	left: 0;
-	position: sticky;
-	top: 0px;
-	background-color: white;
-	z-index: var(--z-index-navbar);
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
-.navbar {
-	position: relative;
-	z-index: var(--z-index-navbar);
-	width: 100%;
-	max-width: 1440px;
-	font-family: var(--heading-font-family);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem 0;
 }
 
+.r-logo {
+  font-weight: 200;
+  font-size: 1.25rem;
+  font-family: var(--manifesto-heading-font-family);
+}
+
+.r-logo span {
+  border-bottom: 1px solid #fff;
+}
+
+.companion em {
+  opacity: 0.7;
+}
+
+.navbar-brand .navbar-item.r-logo {
+  font-size: calc(25 / var(--rem-base) * 1rem);
+}
+
+header.header {
+  left: 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: var(--z-index-navbar);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar {
+  position: relative;
+  z-index: var(--z-index-navbar);
+  width: 100%;
+  max-width: 1440px;
+  font-family: var(--heading-font-family);
+}
 
 .toc.sidebar .toc-menu {
-	margin-top: 4rem;
-	top: calc(var(--navbar-height) + 1rem);
-	padding-top: 1.75rem;
+  margin-top: 4rem;
+  top: calc(var(--navbar-height) + 1rem);
+  padding-top: 1.75rem;
 }
 
 .toc.sidebar .toc-menu h3 {
-	height: auto;
+  height: auto;
 }
 
 @media screen and (min-width: 1024px) {
-    .body {
-      	display: flex;
-	  	justify-content: center;
-    }
-	
-	main {
-		max-width: 1120px;
-	}
-	.nav {
-		top: calc(var(--navbar-height) + 1rem);
-	}
-	.nav .panels {
-		margin-top: 4rem;
-		border-right: 1px solid var(--panel-border-color);
-	}
-	.nav-panel-menu {
-		padding-top: 1rem;
-	}
+  .body {
+    display: flex;
+    justify-content: center;
+  }
 
-	.doc > h1.page:first-child {
-		margin-top: 5.5rem;
-	}
-	.download-pdf {
-		display: block;
-	}
+  main {
+    max-width: 1120px;
+  }
+
+  .nav {
+    top: calc(var(--navbar-height) + 1rem);
+  }
+
+  .nav .panels {
+    margin-top: 4rem;
+    border-right: 1px solid var(--panel-border-color);
+  }
+
+  .nav-panel-menu {
+    padding-top: 1rem;
+  }
+
+  .doc > h1.page:first-child {
+    margin-top: 5.5rem;
+  }
+
+  .download-pdf {
+    display: block;
+  }
 }
+
 @media screen and (min-width: 1440px) {
-	header.header {
-		padding: 1rem;
-	}
-	.navbar {
-		min-width: 1440px;
-		border-radius: 100px;
-		padding: 0 1rem;
-	}
-	.navbar-item.search {
-		padding-right: 0;
-	}
-	.navbar-item .search-bar {
-		padding-right: 0;
-	}
-	.navbar-item .search-bar #search-input {
-		border-radius: 100px;
-		padding: 0.5rem 1rem;
-	}
+  header.header {
+    padding: 1rem;
+  }
+
+  .navbar {
+    min-width: 1440px;
+    border-radius: 100px;
+    padding: 0 1rem;
+  }
+
+  .navbar-item.search {
+    padding-right: 0;
+  }
+
+  .navbar-item .search-bar {
+    padding-right: 0;
+  }
+
+  .navbar-item .search-bar #search-input {
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+  }
 }

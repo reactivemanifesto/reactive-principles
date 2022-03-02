@@ -10,14 +10,16 @@ footer.footer {
   align-items: center;
   margin-top: 4rem;
 }
+
 footer.footer > div {
   max-width: 700px;
   text-align: center;
 }
+
 footer.footer > hr {
   width: 100%;
   max-width: 300px;
-  opacity: .5;
+  opacity: 0.5;
   margin: 2rem 0 0 0;
 }
 
