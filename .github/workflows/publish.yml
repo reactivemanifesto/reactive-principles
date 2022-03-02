@@ -8,14 +8,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Run Antora
-        uses: kameshsampath/antora-site-action@v0.3.0
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
-            antora_playbook: playbook.yml
-            # optional path within the repo, defaults to ${{github.workspace}}
-            site_sources_path: 'docs'
-            antora_generator: 'antora-site-generator-lunr'
-            antora_docsearch_enabled: 'true'
+          node-version: '14'
+      - name: Install Antora
+        run: npm i --no-optional --silent @antora/cli@2.3.4 @antora/site-generator-default@2.3.4
+      - name: Install Lunr
+        run: npm i antora-lunr
+      - name: Install Lunr Site Generator
+        run: npm i antora-site-generator-lunr
+      - name: Run Antora
+        run: DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --generator antora-site-generator-lunr playbook.yml
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
