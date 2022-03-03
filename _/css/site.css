@@ -2413,7 +2413,7 @@ footer.footer > hr {
   font-weight: 500;
   font-weight: var(--monospace-font-weight-bold);
 }
-.navbar-brand .navbar-item.search-bar {
+.search-bar {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -2421,9 +2421,10 @@ footer.footer > hr {
       -ms-flex-pack: end;
           justify-content: flex-end;
   display: none;
+  position: relative;
 }
 @media screen and (min-width: 450px) {
-  .navbar-brand .navbar-item.search-bar {
+  .search-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2627,7 +2628,7 @@ body .download-as-pdf {
   font-weight: 500;
   font-size: 0.75rem;
   color: #fff;
-  border-radius: 100px;
+  border-radius: 4px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'Helvetica Neue'
@@ -2671,7 +2672,7 @@ body {
           align-items: center;
   width: 100%;
   gap: 3rem;
-  margin: 4rem 0 0 0;
+  margin: 4rem 0 2rem 0;
   font-size: 1rem;
 }
 .rp-branding .search-bar {
@@ -2735,6 +2736,13 @@ sans-serif;
   color: #445de9;
   font-size: 1.0625em;
   font-size: var(--body-font-size);
+}
+.nav-menu .section-title.grey {
+  display: block;
+  color: #777;
+  font-weight: 700;
+  font-weight: var(--body-font-weight-bold);
+  font-size: 1.125rem;
 }
 .nav-menu hr {
   opacity: 0.5;
@@ -2809,7 +2817,7 @@ sans-serif;
   }
 
   .doc > h1.page:first-child {
-    margin-top: 5.5rem;
+    margin-top: 3.75rem;
   }
 
   .download-pdf {
