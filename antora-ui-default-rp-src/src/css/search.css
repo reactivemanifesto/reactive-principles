@@ -1,11 +1,12 @@
-.navbar-brand .navbar-item.search-bar {
+.search-bar {
   flex-grow: 1;
   justify-content: flex-end;
   display: none;
+  position: relative;
 }
 
 @media screen and (min-width: 450px) {
-  .navbar-brand .navbar-item.search-bar {
+  .search-bar {
     display: flex;
   }
 }

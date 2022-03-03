@@ -14,7 +14,7 @@ body .download-as-pdf {
   font-weight: 500;
   font-size: 0.75rem;
   color: #fff;
-  border-radius: 100px;
+  border-radius: 4px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: var(--heading-font-family);
@@ -41,7 +41,7 @@ body {
   align-items: center;
   width: 100%;
   gap: 3rem;
-  margin: 4rem 0 0 0;
+  margin: 4rem 0 2rem 0;
   font-size: 1rem;
 }
 
@@ -102,6 +102,12 @@ body {
   display: block;
   color: #445de9;
   font-size: var(--body-font-size);
+}
+.nav-menu .section-title.grey {
+  display: block;
+  color: #777;
+  font-weight: var(--body-font-weight-bold);
+  font-size: 1.125rem;
 }
 
 .nav-menu hr {
@@ -166,7 +172,7 @@ header.header {
   }
 
   .doc > h1.page:first-child {
-    margin-top: 5.5rem;
+    margin-top: 3.75rem;
   }
 
   .download-pdf {
