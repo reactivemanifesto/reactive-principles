@@ -2742,7 +2742,7 @@ sans-serif;
   color: #777;
   font-weight: 700;
   font-weight: var(--body-font-weight-bold);
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .nav-menu hr {
   opacity: 0.5;
