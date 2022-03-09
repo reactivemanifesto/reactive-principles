@@ -107,7 +107,7 @@ body {
   display: block;
   color: #777;
   font-weight: var(--body-font-weight-bold);
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .nav-menu hr {
