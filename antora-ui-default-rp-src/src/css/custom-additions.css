@@ -27,7 +27,13 @@ body .download-as-pdf {
 }
 
 .download-as-pdf:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #445de9;
+  color: white;
+}
+
+.download-as-pdf:hover svg {
+  fill: white;
 }
 
 body {
