@@ -2651,7 +2651,12 @@ sans-serif;
   border: 1px solid var(--color-rm-primary);
 }
 .download-as-pdf:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #445de9;
+  color: white;
+}
+.download-as-pdf:hover svg {
+  fill: white;
 }
 body {
   padding-top: 0;
