@@ -7,9 +7,18 @@
   font-size: calc(15 / var(--rem-base) * 1rem);
   height: var(--toolbar-height);
   justify-content: flex-start;
-  position: sticky;
-  top: var(--navbar-height);
+  position: fixed;
+  top: -2px;
   z-index: var(--z-index-toolbar);
+}
+
+@media screen and (max-width: 769px) {
+  .is-clipped--nav .toolbar {
+    position: fixed;
+    top: 0;
+    background-color: var(--color-rm-primary);
+    width: 100%;
+  }
 }
 
 .toolbar a {
