@@ -85,6 +85,10 @@ body {
   font-weight: 100;
 }
 
+.home-page-intro .content {
+
+}
+
 .companion {
   display: flex;
   flex-direction: row;
