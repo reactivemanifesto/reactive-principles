@@ -20,14 +20,14 @@ include::partial$include.adoc[]
 
 _Design Principles for Distributed Applications_
 
-[.float]
+This document provides guidance and techniques established among experienced Reactive practitioners for building individual services, applications, and whole systems. As a companion to the {reactive-manifesto}[Reactive Manifesto], {reactive-manifesto}[{tab}, window="new tab"] it incorporates the ideas, paradigms, methods, and patterns from both Reactive Programming and Reactive Systems into a set of practical principles that software architects and developers can apply in their transformative work. 
+
+Our purpose is to help businesses realize the efficiencies inherent to using Reactive. Our collective experience shows that these principles enable the design and implementation of  highly concurrent and distributed software that is performant, scalable, and resilient, while at the same time conserving resources when deploying, operating, and maintaining it.  Further application of Reactive principles will allow us as a society to depend on software for making our diverse and distributed civilization more robust.
+
 ****
 Written by Jonas Bonér—with help (roughly in order of contribution level) from: Roland Kuhn, Ben Christensen, Peter Vlugter, Josh Long, Sergey Bykov, Ben Hindman, Vaughn Vernon, Clement Escoffier, James Roper, Michael Behrendt, Kresten Krab Thorup, Colin Breck, Allard Buijze, Derek Collison, Viktor Klang, Ben Hale, Steve Gury, Tyler Jewell, James Ward, Stephan Ewen, and Ryland Degnan.
 ****
 
-This document provides guidance and techniques established among experienced Reactive practitioners for building individual services, applications, and whole systems. As a companion to the {reactive-manifesto}[Reactive Manifesto], {reactive-manifesto}[{tab}, window="new tab"] it incorporates the ideas, paradigms, methods, and patterns from both Reactive Programming and Reactive Systems into a set of practical principles that software architects and developers can apply in their transformative work. 
-
-Our purpose is to help businesses realize the efficiencies inherent to using Reactive. Our collective experience shows that these principles enable the design and implementation of  highly concurrent and distributed software that is performant, scalable, and resilient, while at the same time conserving resources when deploying, operating, and maintaining it.  Further application of Reactive principles will allow us as a society to depend on software for making our diverse and distributed civilization more robust.
 [.home-page-grid]
 ====
 
