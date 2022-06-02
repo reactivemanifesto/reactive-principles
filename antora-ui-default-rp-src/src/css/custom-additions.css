@@ -85,8 +85,43 @@ body {
   font-weight: 100;
 }
 
-.home-page-intro .content {
+.home-page-intro > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.home-page-intro-text {
+  width: 100%;
+}
+
+.home-page-intro-text .content {
+  border: none !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home-page-intro-authors {
+  width: 100%;
+  margin-top: 0 !important;
+  background-color: #f5f5f5 !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page-intro > .content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .home-page-intro-text {
+    width: 60%;
+  }
+
+  .home-page-intro-authors {
+    width: 40%;
+  }
 }
 
 .companion {
