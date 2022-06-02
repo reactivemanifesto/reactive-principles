@@ -40,7 +40,9 @@ Cookie Settings
 Cookie Listing
 --------------
 
-[[ot-sdk-cookie-policy]]
+++++
+<div id="ot-sdk-cookie-policy"></div>
+++++
 
 Policy Update
 -------------
