@@ -45,12 +45,32 @@ footer.footer > hr {
   text-decoration: underline;
 }
 
-.footer .optanon-toggle-display {
-  cursor: pointer;
-}
-
 .footer .legal {
   max-width: 780px;
+}
+
+.footer .legal-footer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer .legal-footer a,
+.footer .legal-footer #ot-sdk-btn.ot-sdk-show-settings {
+  cursor: pointer;
+  border: none !important;
+  color: var(--footer-link-font-color) !important;
+  display: inline-block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.2;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer .legal-footer a:hover,
+.footer .legal-footer #ot-sdk-btn.ot-sdk-show-settings:hover {
+  background-color: transparent;
 }
 
 .footer .brand a {

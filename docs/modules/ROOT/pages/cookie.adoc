@@ -33,13 +33,6 @@ To find out more about cookies, including how to see what cookies have been set 
 
 Because we respect your right to privacy, you can choose not to allow some types of cookies. Below is a list of the cookies that get set on the reactivemanifesto.org domain. Blocking some types of cookies may impact your experience of the site and the services we are able to offer.
 
-Cookie Settings
-
-* * *
-
-Cookie Listing
---------------
-
 ++++
 <div id="ot-sdk-cookie-policy"></div>
 ++++

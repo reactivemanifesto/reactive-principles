@@ -13,7 +13,6 @@
 body .download-as-pdf {
   font-weight: 500;
   font-size: 0.75rem;
-  color: #fff;
   border-radius: 4px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
@@ -112,6 +111,7 @@ body {
   color: #445de9;
   font-size: var(--body-font-size);
 }
+
 .nav-menu .section-title.grey {
   display: block;
   color: #777;
