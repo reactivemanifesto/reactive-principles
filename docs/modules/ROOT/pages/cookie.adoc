@@ -1,0 +1,6 @@
+= Cookie Policy
+include::ROOT:partial$include.adoc[]
+
+_Cookie Policy_
+
+
