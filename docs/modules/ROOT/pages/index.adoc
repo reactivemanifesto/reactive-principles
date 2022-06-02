@@ -21,7 +21,7 @@ include::partial$include.adoc[]
 _Design Principles for Distributed Applications_
 
 [.home-page-intro]
-==
+--
 
 [.home-page-intro-text]
 ====
@@ -34,7 +34,7 @@ Our purpose is to help businesses realize the efficiencies inherent to using Rea
 ****
 Written by Jonas Bonér—with help (roughly in order of contribution level) from: Roland Kuhn, Ben Christensen, Peter Vlugter, Josh Long, Sergey Bykov, Ben Hindman, Vaughn Vernon, Clement Escoffier, James Roper, Michael Behrendt, Kresten Krab Thorup, Colin Breck, Allard Buijze, Derek Collison, Viktor Klang, Ben Hale, Steve Gury, Tyler Jewell, James Ward, Stephan Ewen, and Ryland Degnan.
 ****
-==
+--
 
 [.home-page-grid]
 ====
