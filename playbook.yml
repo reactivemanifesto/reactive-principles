@@ -11,7 +11,11 @@ content:
   
 ui:
   bundle:
-    url: ./antora-ui-default-rp-src/build/ui-rp-theme-bundle.zip
+    url: ./antora-ui-default-rp-src-antora-3/antora-ui-default-master/build/ui-bundle.zip
+
+antora:
+  extensions:
+  - '@antora/lunr-extension'
 
 runtime:
   fetch: true
